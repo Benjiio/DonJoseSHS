@@ -1,0 +1,245 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100..800&display=swap');
+
+  *  {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif; 
+  }
+  .wrapper {
+    position:absolute;
+    top: 170px;
+    right: 30px;
+    width: 500px;
+    height: 500px;
+    background: transparent;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+  }
+  .header{
+    position: fixed;
+      top: -80px;
+      left: -12px;
+      width: 100%;
+      padding: 20px 100px;
+      background: transparent;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; 
+      z-index: 99;
+      text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.8);
+  }
+  .dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: transparent;
+    width: 50px;
+    min-width: 150px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+} 
+  .navbar a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 40px;
+  }
+    .buttonlogin-popup {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;  
+    position: relative
+  }
+  .buttonlogin-popup::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 2px;
+    background: black;
+    opacity: .85;
+  }
+  body {
+    background-image: url("Heil.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    overflow-x: hidden; 
+  }
+  .wrapper {
+    position:absolute;
+    top: 170px;
+    right: 30px;
+    width: 500px;
+    height: 500px;
+    background: transparent;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+  .Loginreg {
+    opacity: 0;               
+    visibility: hidden;       
+    transition: opacity 0.5s ease, visibility 0.5s ease; 
+    width: 100%; 
+    padding: 20px;
+    text-align: center;
+    color: white;
+  }
+  .wrapper .Loginreg {
+    width: 100%; 
+    padding: 20px;
+    text-align: center;
+    color: white;
+  }
+  .wrapper .logregtitle {
+    margin-bottom: -10px;
+  }
+  .logregtitle h2 {
+    font-weight: 1000;
+    text-shadow: 2px 2px -5px rgba(0, 0, 0, 0.8);
+  }
+  .logregtitle p {
+    font-weight: 900;
+    text-shadow: 2px 2px -5px rgba(0, 0, 0, 0.8);
+  }
+  .input-box input[type="email"] {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: transparent;
+    color: black; 
+    border: none; 
+    border-bottom: 2px solid white; 
+    margin-bottom: 20px;
+    outline: none;
+  }
+  .input-box input[type="password"] {
+    width: 80%;
+    height: 50px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: transparent;
+    color: black; 
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+  }
+  .input-box label {
+    position: absolute;
+    left: 0;
+    right: 10px;
+    font-size: 13px;
+    color: white;
+    font-weight: 700;
+    pointer-events: none;
+    margin-top: -3px;
+  }
+  .rememberme {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: white; 
+  }
+  .rememberme a {
+    color: white; 
+    text-decoration: none; 
+    font-weight: 500; 
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.8);
+  }
+  .rememberme a:hover {
+    color: white; 
+    text-decoration: underline;
+    }
+  .button {
+      width: 50%;
+      height: 45px;
+      background: white;
+      border: none;
+      outline: none;
+      border-radius: 40px;
+      font-size: 19px;
+      color: black;
+      box-shadow: 0 4px 1px rgba(0, 0, 0, 0.2);
+      font-weight: 800;
+    }
+    .button:hover {
+      background-color: #003366; 
+      transform: scale(1.05); 
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .Facebook img {
+      position: relative;
+      width: 23%;
+      height: auto;
+      top: 650px;
+    }
+  .Facebook p {
+    position: fixed;
+    top: 700px;
+    color: white;
+    align-items: center;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.8);
+  }
+    /* para sa mga phones */
+    @media (max-width: 600px) {
+      .header {
+          padding: 15px;
+      }
+  
+      .navbar a {
+          font-size: 16px;
+      }
+  
+      .Facebook p {
+          top: 80%;
+      }
+  
+      .wrapper {
+          width: 90%;
+          padding: 15px;
+          max-width: 400px;
+          top: 30%;
+      }
+  
+      .button {
+          font-size: 16px;
+      }
+  
+      .input-box input {
+          width: 100%;
+          height: 45px;
+      }
+  
+      .buttonlogin-popup {
+          font-size: 16px;
+      }
+  }
